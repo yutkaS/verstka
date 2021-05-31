@@ -13,7 +13,7 @@ body {
 
 }
 
-.head{
+.head {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ header {
 
 }
 
-.catalog{
+.catalog {
     height: 500px;
 }
 
@@ -96,15 +96,16 @@ header {
 
 }
 
-.main_heading{
+.main_heading {
     font-size: 60px;
     margin: 20px;
 }
-.heading_text{
+
+.heading_text {
     font-size: 25px;
 }
 
-.submit-button{
+.submit-button {
     width: 180px;
     height: 50px;
     margin: 0 auto;
@@ -116,13 +117,14 @@ header {
 @media screen and (max-width: 1200px) {
     .main_heading {
         font-size: 40px;
-        
+
     }
 
-    .page_selector{
+    .page_selector {
         position: absolute;
     }
-    .info_menu{
+
+    .info_menu {
         display: none;
     }
 }
