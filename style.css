@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family: Roboto;
 }
 
 html {
@@ -99,6 +100,7 @@ header {
 }
 
 .main_heading {
+
     font-size: 60px;
     margin: 20px;
 }
@@ -140,6 +142,7 @@ header {
     text-align: left;
     margin: 15px;
 }
+
 
 .cruise_alliance{
     display: flex;
