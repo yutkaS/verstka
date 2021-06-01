@@ -2,11 +2,8 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
     src: local("RobotoSlab"),
-        /* Если не получилось, загрузит woff2 */
     url("./RobotoSlab/Robotoslabmedium.woff2") format("woff2"),
-        /* Если браузер не поддерживает woff2, загрузит woff */
     url("./RobotoSlab/Robotoslabmedium.woff") format("woff");
 }
 
@@ -14,13 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: Roboto, SansSerif;
-    
-}
-
-
-
-html {
+    font-family: Roboto, sans-serif;
 
 }
 
@@ -28,13 +19,19 @@ body {
     background: #f3f3f3;
 }
 
-.line {
+.page_selector__line {
     background: black;
     width: 30px;
     height: 2px;
     border: 1px solid black;
     border-radius: 10px;
     margin: 5px;
+}
+
+.user_image{
+    background: url("images/user.png");
+    width: 10px;
+    height: 12px;
 }
 
 .head {
@@ -50,10 +47,10 @@ body {
 }
 
 .wrapper {
-    margin: 30px 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 25px auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1040px;
 }
 
 
@@ -77,10 +74,20 @@ header {
     font-size: 14px;
 }
 
+.P_image{
+    background: url("images/Р.png");
+    width: 10px;
+    height: 12px;
+}
+
+.selector__image{
+    margin: 5px;
+}
+
 .header_image {
     width: 11px;
     height: 12px;
-    margin: 5px;
+    margin: 0 5px;
     display: inline-block;
 }
 
@@ -97,7 +104,7 @@ header {
     font-size: 10px;
 }
 
-.number{
+.number {
     font-size: 14px;
 }
 
@@ -128,13 +135,13 @@ header {
 
 }
 
-.main_heading {
+.main__heading {
     font-weight: bold;
     font-size: 72px;
     margin: 25px;
 }
 
-.heading_text {
+.main__heading_text {
     font-size: 26px;
 }
 
@@ -154,7 +161,7 @@ header {
     width: 100%;
 }
 
-.sort {
+.catalog__sort {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,12 +170,12 @@ header {
     margin: 20px auto 45px auto;
 }
 
-.catalog-text{
+.catalog-text {
     font-size: 26px;
     margin-top: 20px;
 }
 
-.description {
+.cruise__description {
     padding: 10px 20px;
     font-size: 14px;
     color: #0d3351;
@@ -181,7 +188,7 @@ header {
     justify-content: space-between;
     background: white;
     text-align: left;
-    margin: 15px;
+    margin: 13px;
     width: 410px;
 }
 
@@ -234,7 +241,7 @@ header {
 
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
@@ -244,27 +251,26 @@ header {
     font-size: 18px;
 }
 
-.row {
+.cruises__row {
     display: flex;
     justify-content: center;
 }
 
-.road {
+.cruise__road {
     display: flex;
     margin: 5px auto;
 }
 
-.during {
+.cruise__during {
     display: flex;
 }
 
-.price {
+.cruise__price {
     margin: 15px 0;
     font-size: 30px;
 }
 
 @media (max-width: 1450px) {
-
 
 
     .img3 {
@@ -277,10 +283,10 @@ header {
     .cruise {
         height: 400px;
         width: 300px;
-        margin: 10px ;
+        margin: 10px;
     }
 
-    .cruise_image {
+    .cruise__image {
         /*width: 100%;*/
         background-size: cover;
         background-position: center;
@@ -288,10 +294,9 @@ header {
         height: 230px;
     }
 
-    .cruise_alliance{
+    .cruise_alliance {
         display: block;
     }
-
 
 
     .hidden {
@@ -300,12 +305,10 @@ header {
 }
 
 @media (max-width: 1200px) {
-    .wrapper{
-        margin: 30px 100px;
-    }
 
 
-    .cruise_image {
+
+    .cruise__image {
         /*width: 100%;*/
         background-size: cover;
         background-position: center;
@@ -318,12 +321,11 @@ header {
     }
 
 
-
     .cruise {
         margin: 20px auto;
     }
 
-    .row {
+    .cruises__row {
         display: block;
         margin: 0 auto;
     }
