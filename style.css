@@ -1,10 +1,24 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("RobotoSlab"),
+        /* Если не получилось, загрузит woff2 */
+    url("./RobotoSlab/Robotoslabmedium.woff2") format("woff2"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+    url("./RobotoSlab/Robotoslabmedium.woff") format("woff");
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: Roboto;
-
+    font-family: Roboto, SansSerif;
+    
 }
+
+
 
 html {
 
@@ -16,8 +30,8 @@ body {
 
 .line {
     background: black;
-    width: 40px;
-    height: 6px;
+    width: 30px;
+    height: 2px;
     border: 1px solid black;
     border-radius: 10px;
     margin: 5px;
@@ -32,7 +46,7 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     height: 647px;
-    min-width: 900px;
+
 }
 
 .wrapper {
@@ -60,11 +74,12 @@ header {
     margin: 0 30px;
     text-align: center;
     align-items: center;
+    font-size: 14px;
 }
 
 .header_image {
-    width: 20px;
-    height: 22px;
+    width: 11px;
+    height: 12px;
     margin: 5px;
     display: inline-block;
 }
@@ -78,7 +93,11 @@ header {
 }
 
 .support_text {
-    font-size: 15px;
+    font-size: 10px;
+}
+
+.number{
+    font-size: 14px;
 }
 
 .snake {
@@ -93,7 +112,7 @@ header {
 .logo {
     width: 110px;
     height: 110px;
-    margin: 35px auto;
+    margin: 100px auto 30px auto;
     background-position: center;
     background-image: url("images/logo.png");
     background-repeat: no-repeat;
@@ -110,17 +129,16 @@ header {
 
 .main_heading {
     font-weight: bold;
-    font-size: 57px;
-    margin: 20px;
+    font-size: 72px;
+    margin: 25px;
 }
 
 .heading_text {
-    font-size: 30px;
-
+    font-size: 26px;
 }
 
 .submit-button {
-    width: 180px;
+    width: 200px;
     height: 50px;
     margin: 0 auto;
     background: #64d6ff;
@@ -139,15 +157,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
     vertical-align: center;
+    margin: 20px auto 45px auto;
+}
+
+.catalog-text{
+    font-size: 26px;
+    margin-top: 20px;
 }
 
 .description {
     padding: 10px 20px;
+    font-size: 14px;
+    color: #0d3351;
+
 }
 
 .cruise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: white;
     text-align: left;
     margin: 15px;
@@ -157,7 +187,7 @@ header {
 .img1 {
     background: url("images/back1.png");
     width: 410px;
-    height: 250px;
+    height: 380px;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -203,9 +233,14 @@ header {
 
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .main-text {
     color: #64d6ff;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .row {
@@ -224,9 +259,10 @@ header {
 
 .price {
     margin: 15px 0;
+    font-size: 30px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1320px) {
 
 
 
@@ -262,7 +298,7 @@ header {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1020px) {
     .wrapper{
         margin: 30px 100px;
     }
