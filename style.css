@@ -262,7 +262,7 @@ header {
     font-size: 30px;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1450px) {
 
 
 
@@ -270,9 +270,9 @@ header {
         background-image: url("./images/back6.png");
     }
 
-    .wrapper {
-        margin: 30px 150px;
-    }
+    /*.wrapper {*/
+    /*    margin: 30px 150px;*/
+    /*}*/
     .cruise {
         height: 400px;
         width: 300px;
@@ -298,7 +298,7 @@ header {
     }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
     .wrapper{
         margin: 30px 100px;
     }
