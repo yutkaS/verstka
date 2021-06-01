@@ -3,6 +3,7 @@
     box-sizing: border-box;
     user-select: none;
     font-family: Roboto;
+
 }
 
 html {
@@ -11,6 +12,15 @@ html {
 
 body {
     background: #f3f3f3;
+}
+
+.line {
+    background: black;
+    width: 40px;
+    height: 6px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .head {
@@ -26,26 +36,17 @@ body {
 }
 
 .wrapper {
-    margin: 30px 30px;
+    margin: 30px 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.page_selector {
-    width: 35px;
-    height: 35px;
-
-}
 
 header {
     display: flex;
     justify-content: space-between;
 
-}
-
-.catalog {
-    height: 500px;
 }
 
 .info_menu {
@@ -69,9 +70,11 @@ header {
 }
 
 .arrow {
-    display: inline-block;
+    background-image: url("./images/arrow.png");
     width: 7px;
     height: 7px;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .support_text {
@@ -79,6 +82,9 @@ header {
 }
 
 .snake {
+    background-image: url("./images/snake.png");
+    width: 163px;
+    height: 300px;
     margin: 0 auto;
     /*left: 0;*/
     /*right: 0;*/
@@ -88,6 +94,9 @@ header {
     width: 110px;
     height: 110px;
     margin: 35px auto;
+    background-position: center;
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
 }
 
 .main {
@@ -100,13 +109,14 @@ header {
 }
 
 .main_heading {
-
-    font-size: 60px;
+    font-weight: bold;
+    font-size: 57px;
     margin: 20px;
 }
 
 .heading_text {
-    font-size: 25px;
+    font-size: 30px;
+
 }
 
 .submit-button {
@@ -120,9 +130,9 @@ header {
 
 .catalog {
     text-align: center;
-    padding: 20px;
     margin: 0 auto;
     align-items: stretch;
+    width: 100%;
 }
 
 .sort {
@@ -133,7 +143,7 @@ header {
     vertical-align: center;
 }
 
-.description{
+.description {
     padding: 10px 20px;
 }
 
@@ -141,23 +151,66 @@ header {
     background: white;
     text-align: left;
     margin: 15px;
+    width: 410px;
 }
 
+.img1 {
+    background: url("images/back1.png");
+    width: 410px;
+    height: 250px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
 
-.cruise_alliance{
+.img2 {
+    background: url("images/back2.png");
+    width: 410px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    background: url("images/back3.png");
+    width: 410px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.img4 {
+    background: url("images/back4.png");
+    width: 410px;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+
+.img5 {
+    background: url("images/back5.png");
+    width: 410px;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+
+.cruise_alliance {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.main-text{
+.cruises {
+    margin: 0 auto;
+
+}
+
+.main-text {
     color: #64d6ff;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .row {
     display: flex;
+    justify-content: center;
 }
 
 .road {
@@ -175,8 +228,67 @@ header {
 
 @media (max-width: 1300px) {
 
+
+
+    .img3 {
+        background-image: url("./images/back6.png");
+    }
+
+    .wrapper {
+        margin: 30px 150px;
+    }
+    .cruise {
+        height: 400px;
+        width: 300px;
+        margin: 10px ;
+    }
+
+    .cruise_image {
+        /*width: 100%;*/
+        background-size: cover;
+        background-position: center;
+        width: 300px;
+        height: 230px;
+    }
+
+    .cruise_alliance{
+        display: block;
+    }
+
+
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .wrapper{
+        margin: 30px 100px;
+    }
+
+
+    .cruise_image {
+        /*width: 100%;*/
+        background-size: cover;
+        background-position: center;
+        width: 300px;
+        height: 230px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+
+    .cruise {
+        margin: 20px auto;
+    }
+
     .row {
         display: block;
+        margin: 0 auto;
     }
 
     .main_heading {
