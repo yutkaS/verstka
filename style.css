@@ -24,14 +24,9 @@
     color: #0d3351;
 }
 
-body {
 
-    background: url("images/sochi.png");
+body{
     background-color: #f3f3f3;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    max-height: 700px;
 }
 
 .page_selector__line {
@@ -61,8 +56,6 @@ body {
 
 
 header {
-    display: flex;
-    justify-content: space-between;
 
 }
 
@@ -117,10 +110,15 @@ header {
 .snake {
     background-image: url("./images/snake.png");
     width: 163px;
-    height: 300px;
-    margin: 0 auto;
-    /*left: 0;*/
-    /*right: 0;*/
+    height: 280px;
+    position: absolute;
+    margin:  auto ;
+    left: 0;
+    right: 0;
+  top: 38pc;
+
+
+
 }
 
 .logo {
@@ -134,11 +132,16 @@ header {
 
 .main {
     display: flex;
+    justify-content: space-between;
+    background-image: url("images/sochi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     flex-direction: column;
     text-align: center;
     min-width: 340px;
     margin: 0 auto;
-
+    padding-bottom: 150px;
 }
 
 .main__heading {
@@ -161,6 +164,7 @@ header {
 }
 
 .catalog {
+    padding-top: 150px;
     text-align: center;
     margin: 0 auto;
     align-items: stretch;
@@ -320,9 +324,16 @@ header {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
 
+    .snake{
+        top: 44pc;
+    }
 
+    .main__heading{
+        max-width: 370px;
+        margin: 0 auto;
+    }
 
     .cruise__image {
         /*width: 100%;*/
