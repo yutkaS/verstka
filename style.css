@@ -24,8 +24,40 @@
     color: #0d3351;
 }
 
+.book-mark_red {
+    background-image: url("images/redBookmark.png");
+    width: 90px;
+    height: 100px;
+    background-repeat: no-repeat;
 
-body{
+    position: absolute;
+    color: white;
+    margin: 0 0 0 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+
+}
+
+.book-mark {
+    justify-content: center;
+    background-image: url("images/bookmark.png");
+    width: 90px;
+    height: 100px;
+    position: absolute;
+    color: white;
+    margin: 0 0 0 400px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+}
+
+body {
     background-color: #f3f3f3;
 }
 
@@ -38,17 +70,16 @@ body{
     margin: 5px;
 }
 
-.user_image{
+.user_image {
     background: url("images/user.png");
     width: 10px;
     height: 12px;
 }
 
 
-
 .wrapper {
-    margin: 25px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 25px 20px;
     width: 100%;
     max-width: 1040px;
 
@@ -74,13 +105,13 @@ header {
     font-size: 14px;
 }
 
-.P_image{
+.P_image {
     background: url("images/Р.png");
     width: 10px;
     height: 12px;
 }
 
-.selector__image{
+.selector__image {
     margin: 5px;
 }
 
@@ -113,11 +144,10 @@ header {
     width: 163px;
     height: 280px;
     position: absolute;
-    margin:  auto ;
+    margin: auto;
     left: 0;
     right: 0;
-  top: 38pc;
-
+    top: 38pc;
 
 
 }
@@ -193,8 +223,8 @@ header {
     width: 100%;
 }
 
-.cruise__description *{
-    font-family:Raleway, sans-serif;
+.cruise__description * {
+    font-family: Raleway, sans-serif;
     font-size: 14px;
 }
 
@@ -240,11 +270,11 @@ header {
     background-repeat: no-repeat;
 }
 
-.cruise__image{
+.cruise__image {
     width: 550px;
 }
 
-.cruise__info{
+.cruise__info {
 
 }
 
@@ -277,7 +307,7 @@ header {
 
 .cruise__road {
     display: flex;
-    margin: 0 0 15px 0 ;
+    margin: 0 0 15px 0;
 }
 
 .cruise__during {
@@ -290,8 +320,84 @@ header {
     font-weight: bold;
 }
 
+footer{
+
+    background-color: white;
+    width: 100%;
+    height: 200px;
+
+}
+
+footer .wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    align-items: center;
+}
+
+.contacts .number{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.images__vk{
+    background: url("images/vk.png");
+    width: 30px;
+    height: 30px;
+}
+
+.images__ok{
+    background: url("images/ok.png");
+    width: 30px;
+    height: 30px;
+}
+
+.images__yt{
+    background: url("images/yt.png");
+    width: 30px;
+    height: 30px;
+}
+
+.images__inst{
+    background: url("images/inst.png");
+    width: 30px;
+    height: 30px;
+}
+
+.contacts__images{
+    display: flex;
+}
+
+.contact-image{
+    margin: 10px 5px;
+}
+
+.links{
+    max-width: 150px;
+}
+
+.links a{
+    text-decoration: none;
+
+}
+
+.contacts .support_text{
+    font-size: 10px;
+    margin: 10px 0;
+}
+
 @media (max-width: 1450px) {
 
+    .book-mark {
+        margin: 0 220px;
+    }
+
+    .book-mark_red {
+        margin: 0 220px;
+    }
 
     .img3 {
         background-image: url("./images/back6.png");
@@ -300,7 +406,6 @@ header {
     /*.wrapper {*/
     /*   max-width: 725px;*/
     /*}*/
-
     .cruise {
         height: 500px;
         width: 350px;
@@ -327,11 +432,38 @@ header {
 
 @media (max-width: 860px) {
 
-    .snake{
+
+
+    .contacts{
+        margin: 0 auto;
+    }
+
+    .contacts__images{
+        justify-content: center;
+    }
+
+    footer .wrapper{
+        display: block;
+        text-align: center;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .book-mark {
+        margin: 0 170px;
+    }
+
+    .book-mark_red {
+        margin: 0 170px;
+    }
+
+    .snake {
         top: 44pc;
     }
 
-    .main__heading{
+    .main__heading {
         max-width: 370px;
         margin: 0 auto;
     }
