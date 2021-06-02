@@ -3,8 +3,17 @@
     font-style: normal;
     font-weight: 400;
     src: local("RobotoSlab"),
-    url("./RobotoSlab/Robotoslabmedium.woff2") format("woff2"),
-    url("./RobotoSlab/Robotoslabmedium.woff") format("woff");
+    url("./RobotoSlab/Robotoslabregular.woff2") format("woff2"),
+    url("./RobotoSlab/Robotoslabregular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: local("RobotoSlab"),
+    url("./Raleway/Ralewayregular.woff2") format("woff2"),
+    url("./Raleway/Ralewayregular.woff") format("woff");
 }
 
 * {
@@ -12,11 +21,17 @@
     box-sizing: border-box;
     user-select: none;
     font-family: Roboto, sans-serif;
-
+    color: #0d3351;
 }
 
 body {
-    background: #f3f3f3;
+
+    background: url("images/sochi.png");
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    max-height: 700px;
 }
 
 .page_selector__line {
@@ -34,23 +49,14 @@ body {
     height: 12px;
 }
 
-.head {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: url("images/sochi.png");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 647px;
 
-}
 
 .wrapper {
     margin: 25px auto;
     padding: 0 20px;
     width: 100%;
-    max-width: 1040px;
+    max-width: 1200px;
+
 }
 
 
@@ -136,9 +142,9 @@ header {
 }
 
 .main__heading {
-    font-weight: bold;
     font-size: 72px;
     margin: 25px;
+    font-weight: normal;
 }
 
 .main__heading_text {
@@ -170,16 +176,21 @@ header {
     margin: 20px auto 45px auto;
 }
 
-.catalog-text {
-    font-size: 26px;
+.catalog__text {
+    font-size: 36px;
     margin-top: 20px;
 }
 
 .cruise__description {
+    display: inline-block;
+    align-items: center;
     padding: 10px 20px;
-    font-size: 14px;
-    color: #0d3351;
+    width: 100%;
+}
 
+.cruise__description *{
+    font-family:Raleway, sans-serif;
+    font-size: 14px;
 }
 
 .cruise {
@@ -188,14 +199,13 @@ header {
     justify-content: space-between;
     background: white;
     text-align: left;
-    margin: 13px;
-    width: 410px;
+    margin: 25px;
+    width: 550px;
 }
 
 .img1 {
     background: url("images/back1.png");
-    width: 410px;
-    height: 380px;
+    height: 440px;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -203,30 +213,34 @@ header {
 
 .img2 {
     background: url("images/back2.png");
-    width: 410px;
     height: 100px;
     background-repeat: no-repeat;
 }
 
 .img3 {
     background: url("images/back3.png");
-    width: 410px;
     height: 100px;
     background-repeat: no-repeat;
 }
 
 .img4 {
     background: url("images/back4.png");
-    width: 410px;
     height: 220px;
     background-repeat: no-repeat;
 }
 
 .img5 {
     background: url("images/back5.png");
-    width: 410px;
     height: 220px;
     background-repeat: no-repeat;
+}
+
+.cruise__image{
+    width: 550px;
+}
+
+.cruise__info{
+
 }
 
 .cruise_alliance {
@@ -238,17 +252,17 @@ header {
 
 .cruises {
     margin: 0 auto;
-
 }
 
 .bold {
     font-weight: bold;
 }
 
-.main-text {
+.cruise__name {
     color: #64d6ff;
     font-weight: bold;
     font-size: 18px;
+    margin: 25px 0 20px 0;
 }
 
 .cruises__row {
@@ -258,7 +272,7 @@ header {
 
 .cruise__road {
     display: flex;
-    margin: 5px auto;
+    margin: 0 0 15px 0 ;
 }
 
 .cruise__during {
@@ -266,8 +280,9 @@ header {
 }
 
 .cruise__price {
-    margin: 15px 0;
+    margin: 30px 0;
     font-size: 30px;
+    font-weight: bold;
 }
 
 @media (max-width: 1450px) {
@@ -277,12 +292,13 @@ header {
         background-image: url("./images/back6.png");
     }
 
-    /*.wrapper {*/
-    /*    margin: 30px 150px;*/
-    /*}*/
+    .wrapper {
+       max-width: 725px;
+    }
+
     .cruise {
-        height: 400px;
-        width: 300px;
+        height: 500px;
+        width: 350px;
         margin: 10px;
     }
 
@@ -290,8 +306,8 @@ header {
         /*width: 100%;*/
         background-size: cover;
         background-position: center;
-        width: 300px;
-        height: 230px;
+        width: 350px;
+        height: 275px;
     }
 
     .cruise_alliance {
@@ -304,7 +320,7 @@ header {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
 
 
 
@@ -313,7 +329,7 @@ header {
         background-size: cover;
         background-position: center;
         width: 300px;
-        height: 230px;
+        height: 250px;
     }
 
     .hidden {
@@ -323,6 +339,8 @@ header {
 
     .cruise {
         margin: 20px auto;
+        width: 300px;
+        height: 400px;
     }
 
     .cruises__row {
