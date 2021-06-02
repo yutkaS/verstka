@@ -56,7 +56,8 @@ body{
 
 
 header {
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .info_menu {
