@@ -55,7 +55,7 @@ body {
     margin: 25px auto;
     padding: 0 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1040px;
 
 }
 
@@ -292,9 +292,9 @@ header {
         background-image: url("./images/back6.png");
     }
 
-    .wrapper {
-       max-width: 725px;
-    }
+    /*.wrapper {*/
+    /*   max-width: 725px;*/
+    /*}*/
 
     .cruise {
         height: 500px;
