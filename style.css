@@ -376,12 +376,15 @@ footer .wrapper{
 }
 
 .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     max-width: 150px;
 }
 
 .links a{
     text-decoration: none;
-
+    margin: 7px 0;
 }
 
 .contacts .support_text{
